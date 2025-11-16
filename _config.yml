@@ -1,4 +1,4 @@
-title: Alzeural
+title: Zeural
 collections:
   posts:
     output: true
@@ -16,6 +16,6 @@ collections:
     output: true
   c:
     output: true
-url: "https://alzeural.github.io"
+url: "https://zeural.github.io"
 plugins:
   - jekyll-sitemap
