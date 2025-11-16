@@ -1,0 +1,21 @@
+title: Alzeural
+collections:
+  posts:
+    output: true
+  github:
+    output: true
+  research:
+    output: true
+  mythology:
+    output: true
+  aws:
+    output: true
+  js:
+    output: true
+  cpp:
+    output: true
+  c:
+    output: true
+url: "https://alzeural.github.io"
+plugins:
+  - jekyll-sitemap
