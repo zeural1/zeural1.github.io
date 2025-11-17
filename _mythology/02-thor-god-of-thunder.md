@@ -2,7 +2,7 @@
 layout: lesson
 title: "Thor: The Mighty God of Thunder"
 section: 2
-image: "/assets/favicon.png"
+image: /assets/mythology/thor.jpg
 ---
 
 ## Thor: The Mighty God of Thunder
