@@ -1,6 +1,6 @@
 ---
 title: "Neural Networks: The Backbone of AI"
-date: 2025-10-06
+date: 2025-11-16
 image: "/assets/images/neuralnet.jpeg"
 tags: ["Neural Networks", "Deep Learning", "AI"]
 ---
