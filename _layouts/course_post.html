@@ -2,11 +2,21 @@
 layout: default
 ---
 
-<div class="container">
-  <div class="logo course-logo-container">
-    <a href="/content/courses/{{ page.course }}.html">
-      <img src="/assets/images/{{ page.course }}-logo.png" alt="{{ page.course | capitalize }} Logo">
-    </a>
+<div class="course-page-container">
+  <div class="course-sidebar">
+    <div class="course-logo">
+      <a href="/content/courses/{{ page.course }}.html">
+        <img src="/assets/images/{{ page.course }}-logo.png" alt="{{ page.course | capitalize }} Logo">
+      </a>
+    </div>
+    <ul class="lesson-list">
+      {% assign sorted_posts = site[page.course] | sort: 'title' %}
+      {% for post in sorted_posts %}
+        <li><a href="{{ post.url | relative_url }}" {% if post.url == page.url %}class="active"{% endif %}>{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
   </div>
-  {{ content }}
+  <div class="course-content">
+    {{ content }}
+  </div>
 </div>

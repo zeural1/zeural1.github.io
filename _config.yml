@@ -4,8 +4,6 @@ collections:
     output: true
   github:
     output: true
-  research:
-    output: true
   mythology:
     output: true
   aws:
@@ -15,6 +13,8 @@ collections:
   cpp:
     output: true
   c:
+    output: true
+  research:
     output: true
 url: "https://zeural.github.io"
 plugins:
