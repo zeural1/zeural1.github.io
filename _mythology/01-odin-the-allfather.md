@@ -1,8 +1,8 @@
 ---
-layout: lesson
+layout: post
 title: "Odin the All-Father: King of Asgard"
 section: 1
-image: "/assets/images/alz.jpeg"
+image: /assets/mythology/odin.jpg
 ---
 
 ## Odin the All-Father: King of Asgard
