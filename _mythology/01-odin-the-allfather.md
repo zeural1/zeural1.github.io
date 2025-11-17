@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: lesson
 title: "Odin the All-Father: King of Asgard"
 section: 1
 image: /assets/mythology/odin.jpg
