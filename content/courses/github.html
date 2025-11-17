@@ -3,19 +3,12 @@ layout: default
 title: "GitHub Course"
 ---
 
-{% comment %}
-Find all lessons in the _github collection and sort them.
-{% endcomment %}
 {% assign lessons = site.github | sort: "title" %}
 
 {% if lessons.size > 0 %}
-  <script>
-    // Redirect to the first lesson page
-    window.location.href = "{{ lessons[0].url | relative_url }}";
-  </script>
+<script>
+  window.location.href = "{{ lessons[0].url | relative_url }}";
+</script>
 {% else %}
-  <div class="container">
-    <h1>GitHub Course</h1>
-    <p>No lessons available yet.</p>
-  </div>
+<h1>No lessons found.</h1>
 {% endif %}
