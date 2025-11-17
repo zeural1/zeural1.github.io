@@ -22,3 +22,10 @@ url: "https://zeural1.github.io"
 baseurl: ""
 plugins:
   - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "mythology"
+    values:
+      layout: "post"
