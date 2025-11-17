@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
-<div class="post-content e-content" itemprop="articleBody">
-  {{ content }}
+<div class="lesson-container">
+  <div class="lesson-image-container">
+    <img src="{{ page.image }}" alt="{{ page.title }}" class="lesson-image">
+  </div>
+  <div class="lesson-content-container">
+    <div class="post-content e-content" itemprop="articleBody" style="padding: 20px; margin: 20px; line-height: 1.6;">
+      {{ content }}
+    </div>
+  </div>
 </div>
