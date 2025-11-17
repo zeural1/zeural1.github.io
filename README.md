@@ -4,12 +4,6 @@
 
 ### An Open-Source EdTech Platform *For Learners, By Learners*
 
-[![Contributors](https://img.shields.io/github/contributors/your-username/zeural)](https://github.com/your-username/zeural/graphs/contributors)  
-[![Issues](https://img.shields.io/github/issues/your-username/zeural)](https://github.com/your-username/zeural/issues)  
-[![Forks](https://img.shields.io/github/forks/your-username/zeural)](https://github.com/your-username/zeural/network/members)  
-[![Stars](https://img.shields.io/github/stars/your-username/zeural)](https://github.com/your-username/zeural/stargazers)  
-[![License](https://img.shields.io/github/license/your-username/zeural)](LICENSE)
-
 *Bridging the gap between curiosity and mastery, one contribution at a time.*
 
 </div>
