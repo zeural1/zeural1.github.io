@@ -1,6 +1,6 @@
 ---
 title: "Exploring Dark Matter"
-date: 2025-10-03
+date: 2025-11-17
 image: "/assets/images/dark-matter-new.jpg"
 tags: ["Dark Matter", "Physics", "Research"]
 ---
