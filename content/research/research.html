@@ -3,14 +3,21 @@ layout: default
 title: Research
 ---
 
-<h1>Latest AI Research (from arXiv)</h1>
+<h1>Research Articles</h1>
 
 <ul>
-  {% for paper in site.papers reversed %}
+  {% assign posts = site.research | sort: 'title' %}
+  {% for paper in posts %}
     <li>
-      <h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3>
-      <p>{{ paper.abstract | slice: 0, 250 }}...</p>
-      <a href="{{ paper.url }}">Read more</a>
+      <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
+
+      {% if paper.summary %}
+        <p>{{ paper.summary }}</p>
+      {% else %}
+        <p>{{ paper.content | strip_html | truncate: 250 }}</p>
+      {% endif %}
+
+      <a href="{{ paper.url | relative_url }}">Read more</a>
     </li>
     <hr>
   {% endfor %}
