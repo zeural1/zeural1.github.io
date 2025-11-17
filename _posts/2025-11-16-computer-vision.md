@@ -1,6 +1,6 @@
 ---
 title: "Advancements in Computer Vision"
-date: 2025-10-02
+date: 2025-11-16
 image: "/assets/images/compvis.jpeg"
 tags: ["Computer Vision", "AI", "Deep Learning"]
 ---
