@@ -1,6 +1,6 @@
 ---
 title: "The Zeural Platform"
-date: 2025-10-01
+date: 2025-11-16
 image: "/assets/images/alz.jpeg"
 tags: ["Zeural", "EdTech", "Open Source"]
 ---
