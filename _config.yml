@@ -18,6 +18,7 @@ collections:
     output: true
   fortran:
     output: true
-url: "https://zeural.github.io"
+url: "https://zeural1.github.io"
+baseurl: ""
 plugins:
   - jekyll-sitemap
