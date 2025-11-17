@@ -1,8 +1,17 @@
 ---
 layout: default
-title: "Research"
+title: Research
 ---
 
-<h1>Research</h1>
+<h1>Latest AI Research (from arXiv)</h1>
 
-<p>This is the research page.</p>
+<ul>
+  {% for paper in site.papers reversed %}
+    <li>
+      <h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3>
+      <p>{{ paper.abstract | slice: 0, 250 }}...</p>
+      <a href="{{ paper.url }}">Read more</a>
+    </li>
+    <hr>
+  {% endfor %}
+</ul>
