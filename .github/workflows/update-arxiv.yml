@@ -2,7 +2,7 @@ name: Update arXiv Papers
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -24,33 +24,32 @@ jobs:
 
       - name: Fetch and update papers
         run: |
-          python -c '''
-import arxiv
-import yaml
+          python <<EOF
+          import arxiv
+          import yaml
 
-client = arxiv.Client()
+          client = arxiv.Client()
 
-search = arxiv.Search(
-  query = "cat:cs.AI OR cat:cs.LG OR cat:cs.CL",
-  max_results = 10,
-  sort_by = arxiv.SortCriterion.SubmittedDate
-)
+          search = arxiv.Search(
+            query="cat:cs.AI OR cat:cs.LG OR cat:cs.CL",
+            max_results=10,
+            sort_by=arxiv.SortCriterion.SubmittedDate
+          )
 
-papers_data = []
-for result in client.results(search):
-    paper_data = {
-        'title': result.title,
-        'authors': [author.name for author in result.authors],
-        'summary': result.summary,
-        'url': result.pdf_url,
-        'published': result.published.strftime('%Y-%m-%d')
-    }
-    papers_data.append(paper_data)
+          papers_data = []
+          for result in client.results(search):
+              paper_data = {
+                  'title': result.title,
+                  'authors': [author.name for author in result.authors],
+                  'summary': result.summary,
+                  'url': result.pdf_url,
+                  'published': result.published.strftime('%Y-%m-%d')
+              }
+              papers_data.append(paper_data)
 
-with open('_data/papers.yml', 'w') as f:
-    yaml.dump(papers_data, f)
-
-'''
+          with open('_data/papers.yml', 'w') as f:
+              yaml.dump(papers_data, f)
+          EOF
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
