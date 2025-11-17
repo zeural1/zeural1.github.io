@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<p><strong>Authors:</strong> {{ page.authors | join: ", " }}</p>
+<p><strong>Published:</strong> {{ page.year }}</p>
+<p><strong>PDF:</strong> <a href="{{ page.pdf }}">Download</a></p>
+
+<h2>Abstract</h2>
+<p>{{ page.abstract }}</p>
+
+<hr>
+
+{{ content }}
